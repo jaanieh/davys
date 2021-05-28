@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+body {
+	background: #ffffff;
+	font-size:16px;
+	line-height: 32px;
+	color: #080808;
+	margin: 0;
+	padding: 0;
+	word-wrap:break-word !important;
+	font-family: 'Roboto', sans-serif;
+	}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}	
+
+h3 {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #FFF;
+}
+
+h3 a {
+	color: #080808;
+}
+
+a {
+	color: #1a1a1a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #595959;
+}
+
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	line-height: 70px;
+	font-family: 'Roboto', sans-serif;
+	}
+
+#container {
+	margin: 0 auto;
+	max-width: 890px;
+}
+
+p {
+	text-align: center;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;  
+  width: 100%;  
+}
+
+.logo {
+    float: left;
+    margin: 0 0 0 7%;
+}
+
+.logo img {
+    max-height: 80px;
+}
+
+.navbar-content {
+    margin: 2% 10% 0% 4%;
+    float: right; 
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: grey;
+  text-align: center;
+  text-transform: uppercase;  
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif; 
+  letter-spacing: 3px;  
+   
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: grey;
+  text-transform: uppercase;  
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;/* Important for vertical align on mobile phones */
+  letter-spacing: inherit;  
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* HERO HEADER */
+
+.hero-header {
+    height: 500px;
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+}
+
+.hero-header H1 {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+/* GRID SYSTEM */
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.container .grid {
+    display: flex;
+    flex-direction; row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -15px;
+    padding: 20px;
+}
+
+.container .grid .widget-text {
+    width: 100%;
+    margin: 0 0 50px;
+    padding: 20px;
+}
+
+.container .grid .widget {
+    width: 25%;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+/* FOOTER */
+
+
+footer {
+    width: 100%;
+    padding: 0 15px;
+    background-color: black;
+    color: #fff;
+    font-size: 12px;
+    margin: 50px 0 0 0;
+    line-height: 20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .footer-container {
+      background-image: url('https://images.unsplash.com/photo-1618609377864-68609b857e90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+    background-size: cover;
+}
+
+
+footer ul {
+    list-style: none;
+}
+
+footer .grid {
+    display: flex;
+    flex-direction; row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -15px;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+footer .grid .widget-text {
+    width: 100%;
+    margin: 0 0 50px;
+    padding: 20px;
+}
+
+footer .grid .widget {
+    width: 35%;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
